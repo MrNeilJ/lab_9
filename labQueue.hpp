@@ -8,6 +8,10 @@
 #define LAB_9_LABQUEUE_HPP
 
 
+const int MAXVALUE = 1000;
+void labQueue();
+int randNumGen(int);
+void queueLoad(std::queue<int>, int, int, int);
 
 
 
