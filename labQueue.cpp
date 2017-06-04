@@ -1,6 +1,14 @@
-//
-// Created by Neil Johnson on 6/2/17.
-//
+/**************************************************************
+ * Author: Neil Johnson
+ *
+ * Date: 6.3.2017
+ *
+ * Description: This is the implementation file for the Queue
+ * portion of this lab.  In here we have a few functions that
+ * bring the Queue simulator to life.  We are able to add numbers
+ * to the queue and remove them using a randomly generated number
+ * against a value the user inputted earlier.
+ **************************************************************/
 
 #include "labQueue.hpp"
 #include <iostream>
@@ -9,7 +17,13 @@
 #include <iomanip>
 
 
-
+/**************************************************************
+ * 						labQueue()
+ * 	Description: This is the main function that implements the
+ * 	lab queue simulator.  In here it will ask the user to input
+ * 	values that will equate to % chance of being added, removed,
+ * 	and also number of rounds.
+ **************************************************************/
 void labQueue() {
 	// Seed time so it will keep changing
 	srand(time(NULL));
@@ -39,10 +53,23 @@ void labQueue() {
 
 }
 
+/**************************************************************
+ * 						randNumGen()
+ * 	Description: This will generate a random number between 1
+ * 	and the value that is inputted as its parameter.
+ **************************************************************/
 int randNumGen(int value) {
 	return (rand() % value) + 1;
 }
 
+/**************************************************************
+ * 						randNumGen()
+ * 	Description: This is the main brains of the functionality.
+ * 	It will loop through the inputted values provided earlier
+ * 	by the user and randomly generate another value, and decide
+ * 	if it should be added and if another value should be removed
+ * 	from the queue.
+ **************************************************************/
 void queueLoad(std::queue<int> userQueue, int userRounds, int userInclude, int userExclude) {
 	int roundRandNum;			// Stores the random number being used for this round
 	int addPercent;				// Stores the random percent chance of being in this round

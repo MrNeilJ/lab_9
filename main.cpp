@@ -1,3 +1,14 @@
+/**************************************************************
+ * Author: Neil Johnson
+ *
+ * Date: 6.3.2017
+ *
+ * Description: This is the main file for this labs implementation.
+ * In here I am hosting the main menu option that allows me to
+ * easily access the necessary functions to run each option
+ * presented in the menus below.
+ **************************************************************/
+
 #include <iostream>
 #include "labQueue.hpp"
 #include "menuMaker.hpp"
