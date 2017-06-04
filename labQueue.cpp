@@ -6,7 +6,6 @@
 #include <iostream>
 #include "inputCheck.hpp"
 #include <time.h>
-#include <queue>
 #include <iomanip>
 
 
@@ -79,6 +78,8 @@ void queueLoad(std::queue<int> userQueue, int userRounds, int userInclude, int u
 		// Average out the queue
 		averageLength = ((averageLength * (i - 1)) + length) / i;
 		std::cout << std::setprecision(3) << "Average Length: " << averageLength << "\n" << std::endl;
+
+
 	}
 
 	std::cout << "END QUEUE:" << std::endl;

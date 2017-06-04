@@ -1,6 +1,7 @@
 #include <iostream>
 #include "labQueue.hpp"
 #include "menuMaker.hpp"
+#include "palindrome.hpp"
 
 
 int main() {
@@ -20,6 +21,7 @@ int main() {
 			labQueue();
 		}
 		else if (welcomeResponse == 2) {
+			palindrome();
 
 		}
 		else if (welcomeResponse == 3) {
